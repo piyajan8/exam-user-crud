@@ -1,0 +1,37 @@
+# Exclude files and directories that shouldn't be copied to Docker context
+
+# Target directory (build artifacts)
+target/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+HELP.md
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Maven wrapper jar (we copy it explicitly in Dockerfile)
+!.mvn/wrapper/maven-wrapper.jar

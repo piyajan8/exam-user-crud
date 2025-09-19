@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: exam-user-crud
+  profiles:
+    active: dev
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-unknown-properties: false
+
+  messages:
+    basename: messages
+    encoding: UTF-8
+    cache-duration: 3600
+server:
+  port: 8080
